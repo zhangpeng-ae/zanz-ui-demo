@@ -10,6 +10,12 @@
 		"eslint": "eslint src --ext .js,.vue,.ts,.jsx,.tsx --ignore-path .gitignore --fix",
 		"prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\""
 	},
+	"lint-staged": {
+		"src/**/*.{ts,js,jsx,tsx,vue}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
 	"dependencies": {
 		"vue": "^3.3.11"
 	},
@@ -24,6 +30,8 @@
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-prettier": "5.1.2",
 		"eslint-plugin-vue": "9.19.2",
+		"husky": "8.0.3",
+		"lint-staged": "15.2.0",
 		"prettier": "3.1.1",
 		"sass": "1.69.7",
 		"typescript": "^5.2.2",
