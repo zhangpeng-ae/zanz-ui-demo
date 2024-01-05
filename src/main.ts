@@ -1,5 +1,11 @@
 import { createApp } from "vue";
-import "./style.css";
 import App from "./App.vue";
+import ZanzContainer from "@/components/container";
 
-createApp(App).mount("#app");
+import "@/styles/index.scss";
+
+const app = createApp(App);
+
+app.use(ZanzContainer);
+
+app.mount("#app");
