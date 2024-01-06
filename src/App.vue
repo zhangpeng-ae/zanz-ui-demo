@@ -6,23 +6,30 @@ defineOptions({
 
 <template>
 	<zanz-container>
+		<zanz-header>header</zanz-header>
+		<zanz-main>main</zanz-main>
+		<zanz-footer>footer</zanz-footer>
+	</zanz-container>
+
+	<hr />
+
+	<zanz-container>
 		<zanz-aside width="300px">aside</zanz-aside>
 		<zanz-container>
-			<zanz-header></zanz-header>
-			<zanz-main></zanz-main>
-			<zanz-footer></zanz-footer>
+			<zanz-header>header</zanz-header>
+			<zanz-main>main</zanz-main>
 		</zanz-container>
 	</zanz-container>
 
 	<hr />
 
 	<zanz-container>
-		<zanz-header></zanz-header>
+		<zanz-header>header</zanz-header>
 		<zanz-container>
 			<zanz-aside width="200px">aside</zanz-aside>
 			<zanz-container>
-				<zanz-main></zanz-main>
-				<zanz-footer></zanz-footer>
+				<zanz-main>main</zanz-main>
+				<zanz-footer>footer</zanz-footer>
 			</zanz-container>
 		</zanz-container>
 	</zanz-container>
@@ -49,5 +56,16 @@ defineOptions({
 	color: #333;
 	text-align: center;
 	line-height: 160px;
+}
+
+.zanz-footer {
+	background-color: #b3c0d1;
+	color: #333;
+	text-align: center;
+	line-height: 60px;
+}
+
+hr {
+	margin: 20px 0;
 }
 </style>

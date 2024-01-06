@@ -3,9 +3,20 @@ defineOptions({
 	name: "ZanzMain",
 });
 </script>
-
 <template>
-	<div>main</div>
+	<main class="zanz-main">
+		<slot />
+	</main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@import "@/styles/mixin";
+@include b(main) {
+	display: block;
+	flex: 1;
+	flex-basis: auto;
+	overflow: auto;
+	box-sizing: border-box;
+	padding: $--main-padding;
+}
+</style>
