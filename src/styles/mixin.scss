@@ -7,6 +7,9 @@ $--header-padding: 0 20px !default;
 $--footer-padding: 0 20px !default;
 $--main-padding: 20px !default;
 
+$--zanz-button-default-bg-color: #fff !default;
+$--zanz-button-default-text-color: #606266 !default;
+
 //bem
 @mixin b($block) {
 	$B: $namesapce + "-" + $block !global;
@@ -23,3 +26,5 @@ $--main-padding: 20px !default;
 		}
 	}
 }
+
+// @mixin 
